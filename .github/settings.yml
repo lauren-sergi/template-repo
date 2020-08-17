@@ -1,13 +1,15 @@
 repository:
   description: A template repository for testing purposes.
 
-#branches:
-  #owner: lauren-sergi
-  #repo: template-repo
-  branch: master
-  required_status_checks: null
-  enforce_admins: null
-  required_pull_request_reviews:
-    - require_code_owner_reviews: true
-      required_approving_review_count: 1
-  restrictions: null
+branches:
+  - name: master
+    protection:
+      # Required. Require at least one approving review on a pull request, before merging. Set to null to disable.
+      required_pull_request_reviews:
+        # The number of approvals required. (1-6)
+        required_approving_review_count: 1
+        # Blocks merge until code owners have reviewed.
+        require_code_owner_reviews: true
+      required_status_checks: null
+      enforce_admins: null
+      restrictions: null
