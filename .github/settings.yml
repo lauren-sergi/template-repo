@@ -1,7 +1,7 @@
 repository:
   description: A template repository for testing purposes.
 
-branches:
+#branches:
   #owner: lauren-sergi
   #repo: template-repo
   branch: master
