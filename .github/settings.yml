@@ -11,5 +11,6 @@ branches:
         # Blocks merge until code owners have reviewed.
         require_code_owner_reviews: true
       required_status_checks: null
-      enforce_admins: null
-      restrictions: null
+      enforce_admins: true
+      restrictions:
+        teams: []
